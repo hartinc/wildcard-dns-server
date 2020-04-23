@@ -154,7 +154,7 @@ def main():
 
     wildcard_domain = os.environ.get('WILDCARD_DOMAIN', 'xip.io')
 
-    mapped_hosts = {}
+    mapped_hosts = {"*.local-*.devhart.com": "127.0.0.1"}
 
     mapping_json = os.environ.get('MAPPED_HOSTS')
 
